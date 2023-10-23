@@ -1,0 +1,104 @@
+*{
+    margin: 0; /*saco el margen de los elementos del BODY */
+    padding: 0; /*saco el padding de los elementos */
+}
+head{
+    background-position: 50%;
+}
+body{
+    background-color: rgb(198, 7, 182);
+
+}
+#section1{
+    display:inline-block;
+    background-color: rgb(86, 15, 133);
+}
+.container1{
+    border: 10px solid rgb(86, 15, 133);
+    Display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    Gap: 10px;
+    flex-wrap: wrap;
+}
+.container2{
+    border: 10px solid rgb(28, 170, 196);
+    Display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    Gap: 10px;
+    flex-wrap: wrap;
+}
+.container3{
+    border: 10px solid rgb(86, 15, 133);
+    Display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    Gap: 10px;
+    flex-wrap: wrap;
+}
+h1 h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:small;
+    font-weight: bold;
+    Margin: 10px;
+}
+h3 h4 h5{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    Margin: 10px;
+}
+div{
+    text-align: left;
+    position: sticky;
+    top: 40px; left: 40px;
+    margin: 10px;
+}
+div h2{
+    text-align: right ;
+    position: sticky;
+    top: 38px; left: 30px;
+    margin: 10px;
+}
+h3,p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: italic;
+    text-align: center;
+    padding: 5px;
+}
+h4{
+    text-align: center;
+    padding: 5px;
+}
+.section1{
+    text-align: center ;
+}
+h5{
+    text-align: center;
+    padding: 5px;
+}
+#section4 p1
+{
+    text-align: right;
+
+}
+#section2 p2
+{
+    text-align: left;
+}
+ul {
+    list-style-type: none;
+}
+#section1 h1{
+    color: chartreuse;
+}
+#section4 p3{
+    margin: 10px;
+
+}
+.section4{
+    align-items: center;
+    display: block;
+    margin: 100% auto;
+}
