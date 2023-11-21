@@ -3,7 +3,7 @@ La pagina creada es una tienda para comprar diferentes articulos muchos de ellos
 #
 
 # Imagenes
-![]
+![Sonia Aguilar BA Multiplica/Imag/2.png]
 > Un Lugar para soñar.
 # Contactos
 IG: https://www.instagram.com/1isabellamia1/
