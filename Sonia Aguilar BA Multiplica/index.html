@@ -1,109 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Isabellamia</title>
-    <link rel="stylesheet" href="./Estilos/Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isabellamia tienda oficial</title>
+    <link rel="stylesheet" href="Estilos/Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/JS.js/script.js">
 </head>
 <body>
-    <Head> <!-- Aquí irá el Logo de la marca contenido de la cabecera, como el menú de 
-        navegación desplegable, banner general de mi sitio y opción para creaciòn de usuario -->
-        <!--Coloque el nav bar de bootstrap-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">Navbar</a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div id="contenedor">
+        <header>
+            <div id="Logo">Logo</div>
+            <div id="Banner">Banner</div>
+       <!--Comienzo de Navbar-->
+       <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">categorías</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Categorías</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">Ver todo</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menú
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Comprar</a></li>
+                    <li><a class="dropdown-item" href="#">Personalizá tu pedido</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Ayuda</a></li>
+                  </ul>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
+              <form class="d-flex mt-3" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-success" type="submit">Search</button>
               </form>
             </div>
           </div>
-        </nav>
-        <!--finaliza nav bar de bootstrap-->
-        <Div><h1>CATEGORIAS</h1></Div>
-        <Div><h2>PERFIL</h1></Div><HR>
-        <img src="imag/1.1.jpg" alt="logo" width="100%" height="10%">
-    </Head>
-    <main>
-        <!-- Opciones de busquedas para comprar -->
-        <section id: section1>
-         <h3><P><strong>NAVEGA POR LA GALERÍA</strong></P></h3>
-          <div class="container1">
-            <nav>
-             <ul> <!-- Lista no ordenada -->
-              <li><a href="" ></a><BUTTON>VER TODO</BUTTON></li>
-              <li><a href="" ></a><BUTTON>REGALERÍA</BUTTON></li>
-              <li><a href="" ></a><BUTTON>SOUVENIRS</BUTTON></li>
-              <li><a href="" ></a><BUTTON>COTILLÓN</BUTTON></li>
-              <li><a href="" ></a><BUTTON>LIBRERÍA</BUTTON></li>
-              <li><a href="" ></a><BUTTON>ECO-FRIENDLY</BUTTON>
-            </ul>
-           </nav>
-          </div>
-            </section><HR>
-        <!-- Opción nuevos articulos para comprar -->
-        <section id: section2>
-         <h4><strong>NUEVOS INGRESOS</strong></h4>
-           <div class="container2">
-            <P>¡¡¡NO TE OLVIDES DE PASAR POR AQUÍ!!!</P>
-            </section>
-        </div> <HR>
-        <!-- Opciones de articulos personalizados -->
-        <section id: section3>
-         <h5><P>PERSONALIZÁ TU PEDIDO</P></h5>
-        <!-- Lista no ordenada -->
-          <div Class="container3">
-            <nav>
-              <ul> 
-               <li><a href="" ></a><BUTTON>SOUVENIRS</BUTTON></li>
-              <li><a href="" ></a><BUTTON>INDUMENTARIA</BUTTON></li>
-              </ul>
-          </nav>
         </div>
-            </section><HR>
-            </main>
-            <footer>
-        <!--  Aquí colocamos el contenido que irá dentro del pie de páginanuestro sitio, enlace a contactos útiles o el aviso legal de 
-        nuestro sitio -->
-            <!-- Lista no ordenada -->
-        <section id: section4></section>
-            <p id="p1">CONTACTOS</p>
-             <div>
-              <nav>
-              <ul>
-               <li><a href="" ></a><BUTTON>WHATSAPP</BUTTON></li>
-               <li><a href="" ></a><BUTTON>MAIL</BUTTON></li>
-               <li><a href="" ></a><BUTTON>CHATBOT</BUTTON></li>
-              </ul>
-             </nav>
+      </nav>
+      <!--fin de Navbar de bootstrap-->
+        </header>
+        <nav>
+            <div id="botones">
+                <a href="#"target="_blank"> Ver todo</a>
+                <a href="#"target="_blank"> Regalería</a>
+                <a href="#"target="_blank"> Souvernirs</a>
+                <a href="#"target="_blank"> Cotillón</a>
+                <a href="#"target="_blank"> Librería</a>
+                <a href="#"target="_blank"> Eco-friendly</a>
             </div>
-            <p id="p2">FOLLOW US</p>
-            <div>
-             <nav>
-              <ul>
-               <li><a href="https://www.instagram.com/1isabellamia1/"target="blank"><BUTTON>INSTAGRAM</BUTTON></A></li>
-              </ul>
-            </nav>
-           </div>
-            <!-- Volver arriba, al logo -->
-            <div class="centrada">   
-            <img src="Imag/arrow_up_upload_icon_123739 (1).png" class= "FlechaVolverArriba"alt="volver arriba"width="2%" height="2%">
-             </div>
-            </footer>
-    </body>
+        </nav>
+        <main>
+            <article> <H2>Un Lugar para soñar</H2>
+                <a href="#"target="_blank">¡¡¡Nuevos ingresos!!!</a>
+                <p>Ingresá y podrás conocer los nuevos productos de las últimas semana</p>
+                 <!--comienzo de carrusel de bootstrap-->
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Sonia Aguilar BA Multiplica/Imag/1C.png" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="/Sonia Aguilar BA Multiplica/Imag/2C.png" class="d-block w-100" alt="">
+              </div>
+              <div class="carousel-item">
+                <img src="/Sonia Aguilar BA Multiplica/Imag/3C.png" class="d-block w-100" alt="">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!--fin de carrusel de bootstrap-->
+            </article>
+            <aside><h2>¡Personaliza tu pedido!</h2>
+                <ul>
+                    <li><a href="#">Souvenirs</a></li>
+                    <li><a href="#">Indumentaria</a></li>
+                </ul>
+            </aside>
+        </main>
+        <footer>
+            
+            <img src="Imag/Logo2.png" alt="isabellamia letras"/>
+            <a href="http://www.facebook.com"target="_blank"><img src="Imag/facebook.png" class="ico"></a>
+            <a href="https://www.instagram.com/1isabellamia1/"target="_blank"><img src="Imag/instagram.png" class="ico"/></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox"target="_blank"><img src="Imag/Email-Icon_icon-icons.com_52966.png" class="ico"/></a>
+            <a href="https://web.whatsapp.com/"target="_blank"><img src="Imag/Share-Icon_icon-icons.com_52965.png" class="ico"/></a>
+            <a href="https://youtube.com.ar/"target="_blank"><img src="Imag/Youtube-Icon_icon-icons.com_52996.png" class="ico"/></a>
+            <p>telefono (011) 4660 4455 </p>
+            <p>@1isabellamia1</p>
+            <p>isabellamia.contacto@gmail.com </p>
+            <p>www.isabellamia.com.ar </p>
+        </footer>  
+    </div>
+    
+</body>
+</html>

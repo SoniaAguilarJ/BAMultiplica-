@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos- Ver todo</title>
+    <link rel="stylesheet" href="/JS.js/script.js">
+    <link rel="stylesheet" href="/Sonia Aguilar BA Multiplica/Estilos/vertodo.css">
+
+</head>
+<body>
+<div id="contenedor"> 
+<header>  
+    <h1>Tienda de Productos</h1> 
+</header>
+<nav>
+    <div id="productos">
+        <h2>Productos</h2>
+        <ul id="contenedor2">
+            <li>Lapiceras tinta azul Marca Big - $50 <button onclick="comprarProducto('Lapiceras tinta azul Marca Big', 50)">Comprar</button></li>
+            <li>Vasos con Glitter - $1500 <button onclick="comprarProducto('Vasos con Glitter', 1500)">Comprar</button></li>
+            <li>Conjunto premium de bebe talle 1 - $5000 <button onclick="comprarProducto('Conjunto premium de bebe talle 1', 5000)">Comprar</button></li>
+            <li>Conjunto premium de bebe talle 2 - $6000 <button onclick="comprarProducto('Conjunto premium de bebe talle 2', 6000)">Comprar</button></li>
+            <li>Conjunto premium de bebe talle 3 - $7000 <button onclick="comprarProducto('Conjunto premium de bebe talle 3', 7000)">Comprar</button></li>
+            <li>Agendas 2024 - $5500 <button onclick="comprarProducto('Agendas 2024', 5500)">Comprar</button></li>
+            <li>Cartulinas con brillantes - $1500 <button onclick="comprarProducto('Cartulinas con brillantes', 1500)">Comprar</button></li>
+            <li>Sacapuntas - $1000 <button onclick="comprarProducto('Sacapuntas', 1000)">Comprar</button></li>
+            <li>Kit Escolar- $15000 <button onclick="comprarProducto('Kit Escolar', 15000)">Comprar</button></li>
+        </ul>
+  </div>
+    <div id="mensaje-compra" style="display: none;">
+        <h2>¡Gracias por tu compra!</h2>
+        <p>Has comprado: <span id="producto-comprado"></span></p>
+    </div>
+
+    <script>
+        // Función para mostrar el mensaje de compra
+        function comprarProducto(nombre, precio) {
+            // Muestra el mensaje de compra
+            const mensajeCompra = document.getElementById('mensaje-compra');
+            const productoComprado = document.getElementById('producto-comprado');
+
+            // Actualiza el contenido del mensaje
+            productoComprado.textContent = `${nombre} por $${precio}`;
+            mensajeCompra.style.display = 'block';
+     }
+    </script>
+</nav>
+    <main> 
+        <article> 
+            <H2>Galeria</H2> 
+        <div class="producto_foto">
+            <h3>Lapiceras tinta azul Marca Big</h3>
+            <a href="#"><img src="/Sonia Aguilar BA Multiplica/Imag/Lapiceras.jpg" class="producto"/></a>
+        </div>
+        <div class="producto_foto">
+            <h3>Vasos con Glitter</h3>
+            <a href="#"><img src="/Sonia Aguilar BA Multiplica/Imag/vasos.jpg" class="producto"/></a>
+        </div>
+        <div class="producto_foto">
+            <h3>Conjunto premium de bebe talle 1-2-3</h3>
+            <a href="#"><img src="/Sonia Aguilar BA Multiplica/Imag/ropa.webp" class="producto"/></a>
+        </div>
+        <div class="producto_foto">
+            <h3>Agendas 2024</h3>
+            <a href="#"><img src="/Sonia Aguilar BA Multiplica/Imag/agendas.jpg" class="producto"/></a>
+        </div>
+        <div class="producto_foto">
+            <h3>Cartulinas con brillantes</h3>
+            <a href="#"><img src="/Sonia Aguilar BA Multiplica/Imag/cartulina_brillante.jpg" class="producto"/></a>
+        </div>
+        <div class="producto_foto">
+            <h3>Sacapuntas</h3>
+            <a href="#"><img src="/Sonia Aguilar BA Multiplica/Imag/sacapuntas.jpg" class="producto"/></a>
+        </div>
+        <div class="producto_foto">
+            <h3>Kit Escolar</h3>
+            <a href="#"><img src="/Sonia Aguilar BA Multiplica/Imag/Kit escolar.jpg" class="producto"/></a>
+        </article>
+
+   </main>
+</body>
+</html>
